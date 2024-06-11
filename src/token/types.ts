@@ -102,3 +102,13 @@ export type TokenSelectDropdownReact = {
   setToken: (token: Token) => void; // Token setter
   token?: Token; // Selected token
 };
+
+/**
+ * Note: exported as public Type
+ */
+export type TokenSelectModalReact = {
+  options: Token[]; // List of tokens
+  setToken: (token: Token) => void; // Token setter
+  token?: Token; // Selected token
+};
+

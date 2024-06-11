@@ -30,5 +30,9 @@ export function OnchainKitProvider({
     setOnchainKitConfig(onchainKitConfig);
     return onchainKitConfig;
   }, [address, chain, schemaId, apiKey, rpcUrl]);
-  return <OnchainKitContext.Provider value={value}>{children}</OnchainKitContext.Provider>;
+  return (
+    <OnchainKitContext.Provider value={value}>
+      <div id="ock-portal">{children}</div>
+    </OnchainKitContext.Provider>
+  );
 }
